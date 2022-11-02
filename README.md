@@ -8,7 +8,7 @@
 - CSS
 
 ## Getting Started
-1. Please go to"https://github.com/Brenda309"
+1. Please go to"https://github.com/Nezerwa"
 2. Click on repositories
 3. Choose repository "Personal-portfolio" or click to "https://github.com/Nezerwa/portfolio-project"
 4. Then clone the repository to your local machine by using the following steps:
