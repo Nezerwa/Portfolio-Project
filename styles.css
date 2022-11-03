@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  text-decoration: none;
+}
+
+body {
+  width: 100%;
+}
+
+.logo {
+  width: 76px;
+  height: 20px;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  color: #6070ff;
+}
+
+.logo a {
+  color: #6070ff;
+}
+
+.navbar-items {
+  width: 63px;
+  height: 20px;
+  font-style: normal;
+  font-size: 15px;
+  line-height: 20px;
+  color: #344563;
+  justify-content: space-between;
+  padding: 14px 14px 0;
+}
+
+@media screen and  (max-width: 768px) {
+  .logo {
+    width: 76px;
+    height: 20px;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 20px;
+    color: #6070ff;
+  }
+
+  .logo-div {
+    width: calc(100% - 80px);
+    display: flex;
+    justify-content: space-between;
+    padding: 40px;
+  }
+
+  .navbar {
+    width: 100%;
+  }
+
+  .navbar-items {
+    display: none;
+  }
+
+  .intro {
+    width: calc(100% - 80px);
+    padding: 150px 40px;
+  }
+
+  .p-intro {
+    margin-top: 20px;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #344563;
+  }
+
+  .h1-intro {
+    height: 150px;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 40px;
+    line-height: 52px;
+    color: #172b4d;
+  }
+
+  .connect {
+    margin-top: 20px;
+    width: 100%;
+  }
+
+  .let-connect {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #7f8cff;
+  }
+
+  .social-media {
+    display: flex;
+    column-gap: 20px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    list-style-type: none;
+  }
+
+  .wrapper {
+    width: calc(100% - 80px);
+    padding: 0 40px;
+    background-image: url(images/mobile.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+  }
+}
