@@ -353,7 +353,6 @@ footer {
   background-image: url(images/contact-mobile-1.png);
   background-repeat: no-repeat;
   background-size: 100%;
-  background-position: center;
 }
 
 .contact-me {
@@ -405,6 +404,7 @@ footer {
   font-weight: 400;
   font-size: 15px;
   line-height: 24px;
+  padding: 5px 20px;
 }
 
 .get-in-touch {
@@ -418,4 +418,5 @@ footer {
   background-color: #fff;
   border-radius: 8px;
   border: none;
+  margin-top: 12px;
 }
