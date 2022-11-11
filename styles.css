@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
 
 * {
   margin: 0;
@@ -14,8 +14,9 @@ body {
 }
 
 main {
-  background-color: hsl(0, 0%, 90%);
+  background-color: white;
   width: 100%;
+  overflow: hidden;
 }
 
 button:hover {
@@ -54,7 +55,6 @@ button:active {
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
-  line-height: 24px;
   color: #344563;
 }
 
@@ -62,8 +62,8 @@ button:active {
   height: 150px;
   font-family: 'Poppins', sans-serif;
   font-style: normal;
-  font-weight: 800;
-  font-size: 40px;
+  font-weight: 700;
+  font-size: 35px;
   line-height: 52px;
   color: #172b4d;
 }
@@ -122,7 +122,7 @@ button:active {
 }
 
 .wrapper {
-  padding: 120px 40px;
+  padding: 80px 10px 10px 15px;
   background-image: url(images/mobile.png);
   background-repeat: no-repeat;
   background-size: 100% 100%;
@@ -135,7 +135,6 @@ button:active {
 .sec4,
 .sec5 {
   display: grid;
-  padding: 24px;
   border-radius: 24px;
   border: 1px solid #dfe1e6;
   margin: auto;
@@ -334,6 +333,7 @@ button:active {
   display: grid;
   padding: 5px 10px;
   grid-template-columns: 20% 80px;
+  gap: 20px;
 }
 
 .tek-html {
@@ -344,6 +344,7 @@ button:active {
   display: grid;
   padding: 5px 10px;
   grid-template-columns: 20% 80px;
+  gap: 20px;
 }
 
 .tek-css {
@@ -353,6 +354,7 @@ button:active {
   display: grid;
   padding: 5px 10px;
   grid-template-columns: 20% 80px;
+  gap: 20px;
 }
 
 footer {
