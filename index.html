@@ -4,36 +4,39 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.0.0/css/all.css" integrity="sha384-3B6NwesSXE7YJlcLI9RpRqGf2p/EgVH8BgoKTaUrmKNDkHPStTQ3EyoYjCGXaOTS" crossorigin="anonymous" />
     <title>Portfolio Project</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
    <header class="logo-div">
-        <div>
             <div class="logo"><a href="#first-section">Eligrand</a></div>
-        </div>
         <nav>
           <img src="images/Union.png" alt="image" class="nav-image">
         <div class="navbar-items">
-            <ul>
-                <li><a href="#" class="portfolio">Portfolio</a></li>
-                <li><a href="#" class="about">About</a></li>
-                <li><a href="#" class="contact">Contact</a></li>
+            <ul class="nav-container">
+                <li><a href="#" class="list-item">Portfolio</a></li>
+                <li><a href="#" class="list-item">About</a></li>
+                <li><a href="#" class="list-item">Contact</a></li>
                 </ul>
         </div>
       </nav>
 </header> 
 <main>
     <section class="wrapper" id="first-section">
-        <article class="intro">
-            <h1 class="h1-intro">I'm Eligrand<br/>
+        <article class="intro intro-wrapper">
+            <h1 class="h1-intro mobile">I'm Eligrand<br/>
               Glad to see<br />
-               you!
+              you!
+            </h1>
+            <h1 class="h1-intro desktop">I'm Eligrand<br/>
+              Glad to see
+              you!
             </h1>
                 <p class="p-intro">
-                    I’m a software developer! I can help you build a product , 
-                    feature or website Look through 
-                    some of my work and experience! If you like what you see and have a project you need
+                    I’m a software developer! I can help you build a product ,
+                    feature or website Look through<br />
+                    some of my work and experience! If you like what you see and have a project you need<br />
                      coded, don’t hesitate to contact me.
                 </p>
                 
@@ -49,9 +52,12 @@
               </div>
         </article>
         </section>   
-        <section class="sec2">
+        <section class="sec2 mobile">
             <div class="sec-content">
+              <div class="image-div"> 
                 <img src="images/Pics.png" alt="image" class="workplace-image">
+              </div>
+                   <div class="sec-cont">
                     <h2 class="tonic">Tonic</h2>
                     <div class="info">
                         <ul class="set">
@@ -69,8 +75,7 @@
                            </ul>
                       </div>
                     <p class="daily">
-                   A daily selection of privately<br />
-                    personalized reads; no accounts or<br />
+                   A daily selection of privately personalized reads; no accounts or 
                      sign-ups required.
                     </p>
                     <ul class="list-tech">
@@ -79,11 +84,48 @@
                         <li>javascript</li>
                     </ul>
                     <button class="see-project">See Project</button>
+                  </div>
+        </section> 
+        <section class="sec2 desktop">
+          <div class="sec-content">
+            <div class="image-div"> 
+              <img src="images/snapshoot Portfolio.png" alt="image" class="workplace-image">
             </div>
-        </section>   
-        <section class="sec3">
-            <div class="sec-content">
+                 <div class="sec-cont">
+                  <h2 class="tonic">Tonic</h2>
+                  <div class="info">
+                      <ul class="set">
+                        <li>
+                          <p class="canopy">CANOPY</p> 
+                        </li>
+                        <li class="dot-style">
+                              <img width="10px" height="10px" src="images/Dot.png" alt="dot">
+                             <p class="back">Back End Dev</p>
+                            </li>
+                            <li class="dot-style">
+                              <img width="10px" height="10px" src="images/Dot.png" alt="dot">
+                             <p class="year">2015</p>
+                            </li>
+                         </ul>
+                    </div>
+                  <p class="daily">
+                 A daily selection of privately personalized reads; no accounts or 
+                   sign-ups required.
+                  </p>
+                  <ul class="list-tech">
+                      <li>html</li>
+                      <li>css</li>
+                      <li>javascript</li>
+                  </ul>
+                  <button class="see-project">See Project</button>
+                </div>
+        </section>  
+        <section class="sec3 mobile">
+            <div class="sec-content even">
+              <div class="image-div"> 
                 <img src="images/availPortfolio.png" alt="image" class="workplace-image">
+              </div>
+              <div class="sec-cont">
                  <h1 class="multi">Multi-Post<br />Stories</h1>
                  <ul class="set">
                     <li>
@@ -109,11 +151,48 @@
                         <li>javascript</li>
                     </ul>
                     <button class="see-project">See Project</button>
-                </div>
+            </div>
+                </div>  
         </section>
-        <section class="sec4">
+        <section class="sec3 desktop reverse">
+          <div class="sec-content even">
+            <div class="image-div"> 
+              <img src="images/prof-port.png" alt="image" class="workplace-image">
+            </div>
+            <div class="sec-cont">
+               <h1 class="multi">Multi-Post Stories</h1>
+               <ul class="set set-margin">
+                  <li>
+                <p class="canopy">FACEBOOK</p> 
+              </li>
+              <li class="dot-style">
+                    <img width="10px" height="10px" src="images/Dot.png" alt="dot">
+                   <p class="back">Full Stack Dev</p>
+                  </li>
+                  <li class="dot-style">
+                    <img width="10px" height="10px" src="images/Dot.png" alt="dot">
+                   <p class="year">2015</p>
+                  </li>
+               </ul>
+                  <p class="daily set-margin">
+                    Experimental content creation feature that allows users to add to an existing story over the course of a day without spamming their friends.
+                  </p>
+                  <ul class="list-tech d-margin">
+                      <li>html</li>
+                      <li>Ruby on rails</li>
+                      <li>css</li>
+                      <li>javascript</li>
+                  </ul>
+                  <button class="see-project">See Project</button>
+          </div>
+              </div>  
+        </section>
+        <section class="sec4 mobile">
            <div class="sec-content">
-            <img src="images/Dance.png" alt="image" class="workplace-image">
+            <div class="image-div"> 
+              <img src="images/Dance.png" alt="image" class="workplace-image">
+            </div>
+            <div class="sec-cont">
             <h2 class="tonic">Tonic</h2>
             <ul class="set">
               <li>
@@ -140,10 +219,47 @@
                </ul>
                <button class="see-project">See Project</button>
            </div>
+           </div>
             </section>
-            <section class="sec5">
+            <section class="sec4 desktop">
+              <div class="sec-content">
+                <div class="image-div"> 
+                  <img src="images/tonic-desk.jpg" alt="image" class="workplace-image">
+                </div>
+                <div class="sec-cont">
+                <h2 class="tonic desk">Facebook 360</h2>
+                <ul class="set">
+                  <li>
+                    <p class="canopy">FACEBOOK</p> 
+                  </li>
+                  <li class="dot-style">
+                        <img width="10px" height="10px" src="images/Dot.png" alt="dot">
+                       <p class="back">Full Stack Dev</p>
+                      </li>
+                      <li class="dot-style">
+                        <img width="10px" height="10px" src="images/Dot.png" alt="dot">
+                       <p class="year">2015</p>
+                      </li>
+                   </ul>
+                   <p class="daily">
+                    Exploring the future of media in Facebook's first Virtual Reality app; a place to discover and enjoy 360 photos and videos on Gear VR.
+                   </p>
+                   <ul class="list-tech f-margin">
+                       <li>html</li>
+                       <li>Ruby on rails</li>
+                       <li>css</li>
+                       <li>javascript</li>
+                   </ul>
+                   <button class="see-project blue b-margin">See Project</button>
+               </div>
+               </div>
+            </section>
+            <section class="sec5 mobile">
                 <div class="sec-content">
+                  <div class="image-div"> 
                     <img src="images/professional.png" alt="image" class="workplace-image">
+                  </div>
+                  <div class="sec-cont">
                      <h1 class="multi">Multi-Post<br />Stories</h1>
                      <ul class="set">
                       <li>
@@ -170,9 +286,43 @@
                         </ul>
                         <button class="see-project">See Project</button>
                     </div>
+                </div>
+            </section>
+            <section class="sec5 desktop reverse">
+              <div class="sec-content">
+                <div class="image-div"> 
+                  <img src="images/availPortfolio.png" alt="image" class="workplace-image">
+                </div>
+                <div class="sec-cont">
+                   <h1 class="multi">Uber-Navigation</h1>
+                   <ul class="set set-margin">
+                    <li>
+                      <p class="canopy">CANOPY</p> 
+                    </li>
+                    <li class="dot-style">
+                          <img width="10px" height="10px" src="images/Dot.png" alt="dot">
+                         <p class="back">Back End Dev</p>
+                        </li>
+                        <li class="dot-style">
+                          <img width="10px" height="10px" src="images/Dot.png" alt="dot">
+                         <p class="year">2015</p>
+                        </li>
+                     </ul>
+                      <p class="daily set-margin">
+                        A smart assistant to make driving more safe, efficient, and fun by unlocking your most expensive computer: your car.
+                      </p>
+                      <ul class="list-tech set-margin">
+                          <li>html</li>
+                          <li>Ruby on rails</li>
+                          <li>css</li>
+                          <li>javascript</li>
+                      </ul>
+                      <button class="see-project">See Project</button>
+                  </div>
+              </div>
             </section>
            <section class="about">
-            <article class="intro">
+            <article class="intro intro-about">
               <h2 class="second-intro">About<br/> Myself</h2>
              <p class="p-intro">
                 Hello I’m a software developer! I can help
@@ -196,7 +346,10 @@
               <button class="get-resume"><h5>Get my resume</h5></button>
             </article> 
             <div class="languages">
-                <h3 class="lang-h">languages</h3>
+                <h3 class="lang-h">
+                  languages
+                </h3>
+                <i class="fa fa-angle-down" aria-hidden="true" id="icon"></i>
                 <ul class="language-ul">
                  <li class="tek-js">
                     <a href="#"><img src="images/JS1.png" alt="image" /></a>
@@ -231,7 +384,7 @@
                  a feature that you need built or a project that needs coding.
                   I’d love to help with it 
               </p>
-              <form  class="feedback" action="https://formspree.io/f/mlevawjl" method="post">
+              <form class="feedback" action="https://formspree.io/f/mlevawjl" method="post">
                <input class="name" type="text" placeholder="Enter your name" name="name" maxlength="30" required>
                <input class ="email" type="email" placeholder="Enter your email" name="email" required>
                <textarea rows="10" maxlength="500" placeholder="Write your message here" required></textarea>
