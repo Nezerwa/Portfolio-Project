@@ -1,7 +1,9 @@
 
 # Personal Portfolio
 
-> Portfolio: In this project I created a person portfolio which is adaptable on mobile/smartphone.
+> Portfolio: In this project I created a person portfolio which is adaptable on Desktop and also mobile/smartphone.
+
+> Please view my portfolio page in your browser by following this link "https://nezerwa.github.io/Portfolio-Project/"
 ## Built With
 
 - HTML
@@ -25,7 +27,7 @@ VS code
 Git(Version Control)
 
 
-## Authors
+## Author
 
 👤 **Eligrand**
 
@@ -49,3 +51,5 @@ Give a ⭐️ if you like this project!
 ## 📝 License
 
 This project is [MIT](./MIT.md) licensed.
+
+![](https://img.shields.io/badge/Microverse-blueviolet)
