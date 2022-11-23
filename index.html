@@ -9,11 +9,11 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-   <header class="logo-div">
+   <!-- <header class="logo-div">
             <div class="logo"><a href="#first-section">Eligrand</a></div>
         <nav>
-          <img src="images/Union.png" alt="image" class="nav-image">
-        <div class="navbar-items">
+          <img src="images/Union.png" alt="image" class="nav-image" id="humberger-id">
+        <div class="navbar-items" id="nav-id">
             <ul class="nav-container">
                 <li><a href="#" class="list-item">Portfolio</a></li>
                 <li><a href="#" class="list-item">About</a></li>
@@ -21,7 +21,30 @@
                 </ul>
         </div>
       </nav>
-</header> 
+</header>  -->
+<header class="header">
+  <nav class="navbar logo">
+    <a href="#">
+      <p>Eligrand</p>
+    </a>
+    <ul class="nav-menu">
+      <li class="nav-item">
+        <a href="#portfolio" class="nav-link">Portfolio</a>
+      </li>
+      <li class="nav-item">
+        <a href="#aboutme" class="nav-link">About</a>
+      </li>
+      <li class="nav-item">
+        <a href="#contact" class="nav-link">Contact</a>
+      </li>
+    </ul>
+    <div class="hamburger">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </div>
+  </nav>
+</header>
 <main>
     <section class="wrapper" id="first-section">
         <article class="intro intro-wrapper">
@@ -391,5 +414,6 @@
                <input  class="get-in-touch" type="submit" value="Get In Touch" required>
                </form>
               </footer>
+              <script src="./script.js"></script>
               </body>
               </html>
