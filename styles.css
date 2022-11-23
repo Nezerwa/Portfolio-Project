@@ -12,11 +12,13 @@
 body {
   width: 100%;
 }
+
 .header {
   width: 100%;
   position: fixed;
   top: 0;
 }
+
 .nav-bar {
   display: flex;
   flex-wrap: wrap;
@@ -25,12 +27,14 @@ body {
   padding: 0 25px;
   background-color: rgba(255, 255, 255, 0.692);
 }
+
 .logo p {
   font-size: 18px;
   font-weight: 700;
   letter-spacing: 0.5px;
   color: #4a5cff;
 }
+
 a {
   text-decoration: none;
 }
@@ -42,6 +46,7 @@ a {
 .nav-bar ul {
   display: none;
 }
+
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -121,27 +126,6 @@ button:active {
   background-color: blue;
   color: white;
 }
-
-/* .logo {
-  width: 76px;
-  height: 20px;
-  font-family: 'Poppins', sans-serif;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 20px;
-  color: #6070ff;
-}
-
-.logo-div {
-  display: flex;
-  justify-content: space-between;
-  padding: 24px;
-  width: 90%;
-  margin: 0 auto;
-  align-items: center;
-} */
-
 .p-intro {
   margin-top: 20px;
   font-family: 'Poppins', sans-serif;
@@ -164,17 +148,6 @@ button:active {
 .intro {
   padding-top: 40px;
 }
-
-/* .navbar {
-  width: 100%;
-}
-
-
-.logo a {
-  color: #6070ff;
-  margin-left: 12px;
-} */
-
 .sec-content {
   background-color: white;
 }
@@ -554,6 +527,7 @@ footer {
     display: grid;
     grid-template-columns: 55% 55%;
   }
+
   .nav-image {
     display: none;
   }
@@ -605,30 +579,6 @@ footer {
     margin-top: -30px;
     word-wrap: break-word;
   }
-/* 
-  .navbar-items {
-    display: flex;
-    font-style: normal;
-    color: #344563;
-    justify-content: space-between;
-  }
-
-  .nav-container {
-    display: flex;
-  }
-
-  .nav-container li {
-    margin-left: 12px;
-  } */
-
-  /* .list-item {
-    color: #344563;
-    font-family: 'Poppins', sans-serif;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 15px;
-    text-decoration: none;
-  } */
   .nav-bar {
     padding: 0 80px;
   }
@@ -637,8 +587,6 @@ footer {
     display: flex;
     flex-direction: row;
   }
-
-  /* mobile menu start */
 
   .nav-menu {
     position: relative;
