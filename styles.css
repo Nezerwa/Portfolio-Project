@@ -16,7 +16,6 @@ body {
   width: 100%;
   position: fixed;
   top: 0;
-  border-bottom: 1px solid #fff;
 }
 .nav-bar {
   display: flex;
