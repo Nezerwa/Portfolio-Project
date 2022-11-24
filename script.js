@@ -11,4 +11,16 @@ document.querySelectorAll('.nav-link').forEach((n) => n.addEventListener('click'
   navMenu.classList.remove('active');
 }));
 
-// mobile menu end
+// Form validation
+
+const email = document.querySelector('.email');
+const alertMsg = document.querySelector('.alert');
+const contactForm = document.querySelector('feedback');
+contactForm.addEventListener('submit', (event) => {
+  const regex = /[A-Z]/;
+  const emailContent = email.value;
+  if (regex.test(emailContent)) {
+    alertMsg.innerHTML = 'Invalid input! Email should be in Lower Case';
+    event.preventDefault();
+  }
+});
