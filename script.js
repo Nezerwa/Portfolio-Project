@@ -11,4 +11,17 @@ document.querySelectorAll('.nav-link').forEach((n) => n.addEventListener('click'
   navMenu.classList.remove('active');
 }));
 
-// mobile menu end
+// Form validation
+
+const email = document.querySelector('#useremail');
+const validationAlert = document.querySelector('.alert');
+const contactForm = document.querySelector('.contact-me');
+contactForm.addEventListener('submit', (event) => {
+  // Write your code below this line.
+  const regex = /[A-Z]/;
+  const emailContent = email.value;
+  if (regex.test(emailContent)) {
+    validationAlert.innerHTML = 'Your email address should not contain uppercase letters';
+    event.preventDefault();
+  }
+});
