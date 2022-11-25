@@ -34,4 +34,4 @@ contactForm.addEventListener('input', () => {
   };
   localStorage.setItem('userData', JSON.stringify(userData));
 });
-// Write your code below this line
+const userDataFromLocalStorage = JSON.parse(localStorage.getItem('userData'));
