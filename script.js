@@ -20,3 +20,18 @@ contactForm.addEventListener('submit', (event) => {
   // Write your code below this line.
   
 });
+
+// Local Storage
+const nameField = document.querySelector('#username');
+const emailAddressField = document.querySelector('#useremail');
+const messageField = document.querySelector('#usermessage');
+
+contactForm.addEventListener('input', () => {
+  const userData = {
+    name: nameField.value,
+    email: emailAddressField.value,
+    message: messageField.value,
+  };
+  localStorage.setItem('userData', JSON.stringify(userData));
+});
+// Write your code below this line
