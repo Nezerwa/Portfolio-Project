@@ -13,14 +13,10 @@ document.querySelectorAll('.nav-link').forEach((n) => n.addEventListener('click'
 
 // Form validation
 
-const email = document.querySelector('.email');
-const alertMsg = document.querySelector('.alert');
-const contactForm = document.querySelector('feedback');
+const email = document.querySelector('#useremail');
+const validationAlert = document.querySelector('.alert');
+const contactForm = document.querySelector('.contact-me');
 contactForm.addEventListener('submit', (event) => {
-  const regex = /[A-Z]/;
-  const emailContent = email.value;
-  if (regex.test(emailContent)) {
-    alertMsg.innerHTML = 'Invalid input! Email should be in Lower Case';
-    event.preventDefault();
-  }
+  // Write your code below this line.
+  
 });
