@@ -24,5 +24,4 @@ contactForm.addEventListener('submit', (event) => {
     validationAlert.innerHTML = 'Your email address should not contain uppercase letters';
     event.preventDefault();
   }
-
 });
