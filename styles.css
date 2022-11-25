@@ -252,7 +252,6 @@ button:active {
 }
 
 .popup-wrapper {
-  width: calc(80% - 20px);
   height: 90%;
   padding: 10px;
   border-radius: 24px;
@@ -372,9 +371,6 @@ button:active {
   margin-left: 10px;
 }
 
-/* end */
-
- 
 .p-intro {
   margin-top: 20px;
   font-family: 'Poppins', sans-serif;
