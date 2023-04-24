@@ -1,80 +1,87 @@
 // Mobile menu actions
 
-const hamburger = document.querySelector('.hamburger');
-const navMenu = document.querySelector('.nav-menu');
+const hamburger = document.querySelector(".hamburger");
+const navMenu = document.querySelector(".nav-menu");
 
-hamburger.addEventListener('click', () => {
-  hamburger.classList.toggle('active');
-  navMenu.classList.toggle('active');
+hamburger.addEventListener("click", () => {
+  hamburger.classList.toggle("active");
+  navMenu.classList.toggle("active");
 });
 
-document.querySelectorAll('.nav-link').forEach((n) => n.addEventListener('click', () => {
-  hamburger.classList.remove('active');
-  navMenu.classList.remove('active');
-}));
+document.querySelectorAll(".nav-link").forEach((n) =>
+  n.addEventListener("click", () => {
+    hamburger.classList.remove("active");
+    navMenu.classList.remove("active");
+  })
+);
 
 // mobile menu end
 
 // Popup-window
 
-const workContainer = document.getElementById('workContainer');
-const popupContainer = document.getElementById('popupContainer');
+const workContainer = document.getElementById("workContainer");
+const popupContainer = document.getElementById("popupContainer");
 
 const details = [
   {
     id: 1,
-    title: 'Tonic',
-    place: 'CANOPY',
-    position: 'Back End Dev',
-    period: '2015',
-    skills: ['html', 'css', 'javaScript'],
-    image: './images/tonic.jpg',
-    live_demo: 'https://nezerwa.github.io/Portfolio-Project/',
-    source_code: 'https://github.com/Nezerwa/Portfolio-Project',
-    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+    title: "Metrics-Crypto-APP",
+    place: "CANOPY",
+    position: "Frotend Dev",
+    period: "2023",
+    skills: ["React", "Redux", "CSS"],
+    image: "./images/Metrics.png",
+    live_demo: "https://splendorous-dieffenbachia-490882.netlify.app/",
+    source_code: "https://github.com/Nezerwa/metrics-webapp",
+    description:
+      "  This web application is designed to help users keep track of cryptocurrency prices and portfolio values in real time. Built with React.js and the Redux Toolkit, this app offers a smooth and intuitive user interface that allows users to easily monitor their cryptocurrency investments. ",
   },
   {
     id: 2,
-    title: 'Uber Navigation',
-    place: 'Uber',
-    position: 'Lead Developer',
-    period: '2018',
-    skills: ['html', 'Ruby on rails', 'css', 'javaScript'],
-    image: './images/multipost.png',
-    live_demo: 'https://nezerwa.github.io/Portfolio-Project/',
-    source_code: 'https://github.com/Nezerwa/Portfolio-Project',
-    description: 'A smart assistant to make driving more safe, efficient, and fun by unlocking your most expensive computer: your car.',
+    title: "Uber Navigation",
+    place: "Uber",
+    position: "Lead Developer",
+    period: "2018",
+    skills: ["html", "Ruby on rails", "css", "javaScript"],
+    image: "./images/multipost.png",
+    live_demo: "https://nezerwa.github.io/Portfolio-Project/",
+    source_code: "https://github.com/Nezerwa/Portfolio-Project",
+    description:
+      "A smart assistant to make driving more safe, efficient, and fun by unlocking your most expensive computer: your car.",
   },
   {
     id: 3,
-    title: 'Facebook 360',
-    place: 'CANOPY',
-    position: 'Back End Dev',
-    period: '2015',
-    skills: ['html', 'css', 'javaScript'],
-    image: './images/tonic2.png',
-    live_demo: 'https://nezerwa.github.io/Portfolio-Project/',
-    source_code: 'https://github.com/Nezerwa/Portfolio-Project',
-    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required .',
+    title: "Facebook 360",
+    place: "CANOPY",
+    position: "Back End Dev",
+    period: "2015",
+    skills: ["html", "css", "javaScript"],
+    image: "./images/tonic2.png",
+    live_demo: "https://nezerwa.github.io/Portfolio-Project/",
+    source_code: "https://github.com/Nezerwa/Portfolio-Project",
+    description:
+      "A daily selection of privately personalized reads; no accounts or sign-ups required .",
   },
   {
     id: 4,
-    title: 'Multi-Post Stories',
-    place: 'FACEBOOK',
-    position: 'Full Stack Dev',
-    period: '2015',
-    skills: ['html', 'Ruby on rails', 'css', 'javaScript'],
-    image: './images/art.png',
-    live_demo: 'https://nezerwa.github.io/Portfolio-Project/',
-    source_code: 'https://github.com/Nezerwa/Portfolio-Project',
-    description: 'Experimental content creation feature that allows users to add to an existing story over the course of a day without spamming their friends.',
+    title: "Multi-Post Stories",
+    place: "FACEBOOK",
+    position: "Full Stack Dev",
+    period: "2015",
+    skills: ["html", "Ruby on rails", "css", "javaScript"],
+    image: "./images/art.png",
+    live_demo: "https://nezerwa.github.io/Portfolio-Project/",
+    source_code: "https://github.com/Nezerwa/Portfolio-Project",
+    description:
+      "Experimental content creation feature that allows users to add to an existing story over the course of a day without spamming their friends.",
   },
-
 ];
 
 const getWorkData = details.map((item, index) => {
-  const skillsList = item.skills.map((list) => `<li>${list}</li>`).join('');
-  const content = index % 2 === 0 ? `<div class="work-wrapper">
+  const skillsList = item.skills.map((list) => `<li>${list}</li>`).join("");
+  const content =
+    index % 2 === 0
+      ? `<div class="work-wrapper">
       <div class="image">
         <img src=${item.image} class="work-place-img" />
       </div>
@@ -91,7 +98,8 @@ const getWorkData = details.map((item, index) => {
         <ul>${skillsList}</ul>
         <button type="button" onclick="popupDetailsFunc(${item.id})">See Project</button>
       </div>
-    </div>` : `<div class="work-wrapper reversed-wrapper">
+    </div>`
+      : `<div class="work-wrapper reversed-wrapper">
       <div class="image">
         <img src=${item.image} class="work-place-img" />
       </div>
@@ -115,7 +123,7 @@ const popupDetailsFunc = (cardId) => {
   if (cardId === null) return;
   let item = details.filter((el) => el.id === cardId);
   item = item.shift();
-  const skillsList = item.skills.map((list) => `<li>${list}</li>`).join('');
+  const skillsList = item.skills.map((list) => `<li>${list}</li>`).join("");
   const res = ` <div class="popup-wrapper">
         <div class="popup-sub-wrapper">
           <div class="popup-header">
@@ -155,17 +163,17 @@ const popupDetailsFunc = (cardId) => {
         </div>
       </div>`;
 
-  popupContainer.style.transform = 'translate(0%,0%) scale(1)';
-  document.body.style.overflow = 'hidden';
+  popupContainer.style.transform = "translate(0%,0%) scale(1)";
+  document.body.style.overflow = "hidden";
   popupContainer.innerHTML = res;
 };
 
 const closePopupFunc = (status) => {
   if (status === null) return;
-  document.body.style.overflow = 'scroll';
-  popupContainer.style.transform = 'translate(0%,0%) scale(0)';
+  document.body.style.overflow = "scroll";
+  popupContainer.style.transform = "translate(0%,0%) scale(0)";
 };
-window.addEventListener('load', () => {
+window.addEventListener("load", () => {
   workContainer.innerHTML = getWorkData;
   return workContainer;
 });
@@ -174,14 +182,15 @@ popupDetailsFunc(null);
 
 // Form validation
 
-const email = document.querySelector('#useremail');
-const validationAlert = document.querySelector('.alert');
-const contactForm = document.querySelector('.contact-me');
-contactForm.addEventListener('submit', (event) => {
+const email = document.querySelector("#useremail");
+const validationAlert = document.querySelector(".alert");
+const contactForm = document.querySelector(".contact-me");
+contactForm.addEventListener("submit", (event) => {
   const regex = /[A-Z]/;
   const emailContent = email.value;
   if (regex.test(emailContent)) {
-    validationAlert.innerHTML = 'Your email address should not contain uppercase letters';
+    validationAlert.innerHTML =
+      "Your email address should not contain uppercase letters";
     event.preventDefault();
   }
 });
